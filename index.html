@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- nhúng font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- my style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./logo-tuhoc-light.png" alt="Bootstrap" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- nav bar -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- nút login -->
+          <div>
+            <a href="#!" class="btn btn-danger btn-s">
+              <i class="fa-solid fa-user-plus"></i> sign-up-for free
+            </a>
+            <a href="#!" class="btn btn-warning me-1">
+              <i class="fa-solid fa-right-to-bracket"></i> Login</a
+            >
+          </div>
+
+          <!-- search -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-1"
+              type="search"
+              placeholder="Search for..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header class="main-header pd-5 border-bottom">
+      <div class="container">
+        <div class="row align-items-center gx-md-5">
+          <!-- khối trái -->
+          <div class="col-md-6 mt-2 mt-md-0">
+            <h1 class="fs-3 fw-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing
+            </h1>
+            <p class="fs-5 fw-light text-secondary">
+              Lorem ipsum dolor sit amet.
+            </p>
+            <a href="#!" class="btn btn-success">Get Started</a>
+          </div>
+          <!-- khối phải -->
+          <div class="col-md-6 mt-2 mb-4">
+            <div>
+              <img
+                src="./anh-header.jpg"
+                alt="ảnh header"
+                class="rounded w-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Site feature -->
+    <section class="site-feature py-4 border-bottom">
+      <div class="container">
+        <div class="row">
+          <!-- item 1 -->
+          <div class="col-md-4 border rounded d-flex">
+            <div
+              class="feature-item bg-white p-3 align-items-center mt-2 mt-mb-0"
+            >
+              <div>
+                <i class="fa-solid fa-graduation-cap fs-1 text-primary"></i>
+              </div>
+            </div>
+            <div class="ms-2">
+              <h5 class="fs-5">Lorem ipsum dolor.</h5>
+              <p class="small text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="col-md-4 border rounded d-flex">
+            <div
+              class="feature-item bg-white p-3 align-items-center mt-2 mt-mb-0"
+            >
+              <div>
+                <i class="fa-solid fa-graduation-cap fs-1 text-primary"></i>
+              </div>
+            </div>
+            <div class="ms-2">
+              <h5 class="fs-5">Lorem ipsum dolor.</h5>
+              <p class="small text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="col-md-4 border rounded d-flex">
+            <div
+              class="feature-item bg-white p-3 align-items-center mt-2 mt-mb-0"
+            >
+              <div>
+                <i class="fa-solid fa-graduation-cap fs-1 text-primary"></i>
+              </div>
+            </div>
+            <div class="ms-2">
+              <h5 class="fs-5">Lorem ipsum dolor.</h5>
+              <p class="small text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- view on course -->
+    <section class="site-feature py-4 border-bottom">
+      <div class="container">
+        <!-- row top -->
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div class="course-loop-heading text-md-center mb-4">
+              <h4 class="fs-5">Lorem, ipsum dolor sit amet consectetur .</h4>
+              <p class="small text-secondary">Lorem ipsum dolor sit amet.</p>
+              <a href="#!" class="btn btn-success">View on Course</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- course -->
+        <div class="row mt-4">
+          <!--row course left -->
+          <div class="col-md-3">
+            <!-- row left  -->
+            <div class="list-group mb-3 small">
+              <div class="list-group-item bg-light text-bg-light fw-bold">
+                Course Categoire
+              </div>
+              <a
+                href="#!"
+                class="list-group-item align-items-center list-group-item-action d-flex justify-content-between"
+                >Web developer
+                <span class="badge bg-warning rounded-pill text-dark">10</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item align-items-center list-group-item-action d-flex justify-content-between"
+                >.Net developer
+                <span class="badge bg-warning rounded-pill text-dark">9</span>
+              </a>
+            </div>
+            <!--row left 2  -->
+            <div class="list-group mb-3 small mb-md-0">
+              <div class="list-group-item bg-light text-bg-light fw-bold">
+                Course by Toplic
+              </div>
+              <a
+                href="#!"
+                class="list-group-item d-flex align-items-center justify-content-between list-group-item-action"
+                >.Net developer
+                <span class="badge bg-warning rounded-pill text-dark">10</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item d-flex align-items-center justify-content-between list-group-item-action"
+                >Bootstrap
+                <span class="badge bg-warning rounded-pill text-dark">8</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item d-flex align-items-center justify-content-between list-group-item-action"
+                >Javascrip
+                <span class="badge bg-warning rounded-pill text-dark">7</span>
+              </a>
+            </div>
+          </div>
+          <!--row course right -->
+          <div class="col-md-9">
+            <div class="list-group small">
+              <!-- title -->
+              <div
+                class="list-group-item bg-light text-bg-light fw-bold d-flex align-items-center justify-content-between list-group-item-action"
+              >
+                List of all course
+                <span class="badge bg-warning rounded-pill text-dark">24</span>
+              </div>
+              <!-- chi tiết -->
+              <a
+                href="./single-course.html"
+                class="list-group-item list-group-item-action"
+                >Chi tiết
+                <!-- body -->
+                <div class="row align-items-center g-3">
+                  <!-- img 1-->
+                  <div class="col-md-4 align-items-center">
+                    <div>
+                      <img
+                        src="./anh-header.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <!-- info -->
+                  <div class="col-md-8">
+                    <h5 class="fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorum, a.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo porro neque ipsa cupiditate optio nisi harum! Porro
+                      voluptatibus quasi fuga.voluptatibus quasi
+                      fugavoluptatibus quasi fuga
+                    </p>
+                    <!-- nhận xét -->
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="rounded-pill text-bg-warning px-2 py-1 me-2 d-inline-flex align-items-center text-light"
+                        ><i class="fa-solid fa-star me-1 t"></i> 4.5</span
+                      >
+                      <span class="rounded-pill text-bg-success px-2 py-1">
+                        Price: $1000</span
+                      >
+                    </div>
+                  </div>
+                  <!-- img 2 -->
+                  <div class="col-md-4 align-items-center">
+                    <div>
+                      <img
+                        src="./anh-header.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <!-- info -->
+                  <div class="col-md-8">
+                    <h5 class="fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorum, a.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo porro neque ipsa cupiditate optio nisi harum! Porro
+                      voluptatibus quasi fuga.voluptatibus quasi
+                      fugavoluptatibus quasi fuga
+                    </p>
+                    <!-- nhận xét -->
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="rounded-pill text-bg-warning px-2 py-1 me-2 d-inline-flex align-items-center text-light"
+                        ><i class="fa-solid fa-star me-1 t"></i> 4.5</span
+                      >
+                      <span class="rounded-pill text-bg-success px-2 py-1">
+                        Price: $1000</span
+                      >
+                    </div>
+                  </div>
+                  <!-- img 3-->
+                  <div class="col-md-4 align-items-center">
+                    <div>
+                      <img
+                        src="./anh-header.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <!-- info -->
+                  <div class="col-md-8">
+                    <h5 class="fs-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorum, a.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo porro neque ipsa cupiditate optio nisi harum! Porro
+                      voluptatibus quasi fuga.voluptatibus quasi
+                      fugavoluptatibus quasi fuga
+                    </p>
+                    <!-- nhận xét -->
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="rounded-pill text-bg-warning px-2 py-1 me-2 d-inline-flex align-items-center text-light"
+                        ><i class="fa-solid fa-star me-1 t"></i> 4.5</span
+                      >
+                      <span class="rounded-pill text-bg-success px-2 py-1">
+                        Price: $1000</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- other content -->
+    <section class="other-content py-4 border-bottom">
+      <div class="container">
+        <div class="row align-items-center gx-md-5">
+          <!-- khối trái -->
+          <div class="col-md-6">
+            <h1 class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio id recusandae odio ducimus.
+            </h1>
+            <p class="small text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+              error, corrupti sapiente voluptatem totam voluptas accusantium
+              eveniet hic veniam quasi soluta, minus doloremque aut fugiat
+            </p>
+            <h1 class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h1>
+            <p class="small text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+              error, corrupti sapiente voluptatem totam voluptas accusantium
+            </p>
+            <a
+              href=""
+              class="btn btn-success d-inline-flex justify-content-center align-items-center"
+              ><i class="fa-solid fa-link me-2"></i> Sign-up to get</a
+            >
+          </div>
+          <!-- khối phải -->
+          <div class="col-md-6 mt-2 mt-md-0">
+            <div>
+              <img src="./anh-header.jpg" alt="" class="rounded w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe -->
+    <section class="subscribe py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <!-- khối trái -->
+          <div class="col-md-4">
+            <div class="text-center mb-3 mb-md-0">
+              <h5 class="text-white text-md-end fs-4 fw-light">
+                Subscribe for newsletters
+              </h5>
+            </div>
+          </div>
+          <!-- khối phải -->
+          <div class="col-md-4">
+            <!-- form subscribe -->
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Your email"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-success d-flex align-items-center"
+                  type="submit"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="me-2 bi bi-envelope-check-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"
+                    ></path>
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
+                    ></path>
+                  </svg>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main footer -->
+    <footer class="text-bg-dark py-5 small">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-3">
+            <div class="brand-icon mb-2">
+              <img src="./logo-tuhoc-dark.png" alt="" />
+            </div>
+            <address class="small text-secondary">
+              Jayanagar, Bangalore, <br />
+              Karnataka, India. <br />
+              560011
+            </address>
+            <p class="small text-secondary">contact@trongnghia.vn</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Main Menu</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Misc</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-decoration-none text-secondary"
+                  >Link item</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h6>Follow us</h6>
+            <!-- nút -->
+            <div>
+              <!-- face -->
+              <a
+                href="#!"
+                class="btn btn-sm px-md-3 btn-primary rounded-pill mb-2 d-inline-flex align-items-center"
+              >
+                <i class="fa-brands fa-facebook me-md-2"></i>
+                <span class="d-md-block d-none">Facebook</span>
+              </a>
+              <!-- twitter -->
+              <a
+                href="#!"
+                class="btn btn-sm px-md-3 btn-info rounded-pill mb-2 d-inline-flex align-items-center"
+              >
+                <i class="fa-brands fa-twitter me-md-2"></i>
+                <span class="d-md-block d-none">Twitter</span>
+              </a>
+              <!-- youtube -->
+              <a
+                href="#!"
+                class="btn btn-sm px-md-3 btn-danger rounded-pill mb-2 d-inline-flex align-items-center"
+              >
+                <i class="fa-brands fa-youtube me-md-2"></i>
+                <span class="d-md-block d-none">Youtube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright -->
+    <div class="copyright py-4" style="background-color: black">
+      <div class="container">
+        <div class="row justify-content-center text-center text-white">
+          <p class="small">Copyright © 2004. Nguyễn Trọng Nghĩa</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>

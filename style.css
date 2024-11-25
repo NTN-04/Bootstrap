@@ -1,0 +1,11 @@
+.main-header {
+  padding-top: 83px;
+}
+.subscribe {
+  background-image: url(./subscribe.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.brand-icon {
+  width: 130px;
+}
